@@ -1,0 +1,7 @@
+black: #282a36 #333 #232323
+White: #f8f8f2 #fff
+grey: #44475a #44475a
+green: #50fa7b 
+red: #ff5555
+
+Principal: #D4F741
