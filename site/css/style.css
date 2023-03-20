@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5 !important;
+  letter-spacing: 0.05em;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  background-color: #44475a;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #44475a;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #44475a;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.cover {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/bg1.png);
+  background-position: center;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 5em;
+user-select: none;
+}
+.paragrafo{
+
+  position: absolute;
+  bottom: 0em;
+  right: 0.5em;
+  width: 30em;
+  height: 22em;
+  font-size: 1.6em;
+  letter-spacing: 0.2em;
+  line-height: 2.5em;
+  font-weight: 700;
+  text-align: justify;
+}
+.img {
+  position: absolute;
+  top: calc(35vh - 151px);
+  left: 5%;
+}
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+.topBar header,
+.topBar nav,
+.topBar nav ul {
+  width: 100%;
+}
+.topBar header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.topBar header nav ul li {
+  margin: 1em 1em;
+  list-style: none;
+  font-size: 1.5em;
+}
+.topBar header nav ul li:last-child {
+  margin-right: 1em;
+}
+.topBar header nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.5em;
+  color: #555 !important;
+  transition: 600ms ease-out;
+width: 100%;
+height: 100%;
+}
+.topBar header nav ul li a span {
+  margin-right: 5px;
+  font-size: 1.4em;
+}
+.topBar header nav ul li a span i {
+  color: #555 !important;
+}
+.topBar header nav ul li a:hover,
+.topBar header nav ul li a:hover > span i {
+  color: #000 !important;
+  transform: scale(1.3);
+}
+
+#DowloadCV {
+  background-color: #44475a;
+  color: #d4f741 !important;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+}
+
+#DowloadCV i {
+  color: #d4f741 !important;
+}
+
+#DowloadCV:hover {
+  background-color: transparent;
+  color: #000 !important;
+}
+#DowloadCV:hover > span i {
+  color: #000 !important;
+}
+.Top {
+  user-select: none;
+  width: 100vw;
+  height: 35vh;
+  background: linear-gradient(135deg, #92dce5, #d4f741);
+  border-bottom: 2px solid #d4f741;
+  z-index: 1;
+  border-bottom-right-radius: 60%;
+  box-shadow: 10px 0 100px 50px rgba(0, 0, 0, 0.45),
+    inset -20px -20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.Top .text {
+  position: relative;
+  font-size: 0.8em !important;
+  top: 1.2em;
+  left: 10em;
+  width: 45vw;
+  height: 15vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.Top .text h1,
+.Top .text p {
+  line-height: 0.8em;
+  font-size: 1.5em;
+  color: #555 !important;
+  text-transform: none !important;
+}
+.Top .text h1 {
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.Top .text h1 b {
+  color: #44475a !important;
+  text-decoration: underline #555;
+}
+.topBar .text h1 a:hover > b {
+  color: #000 !important;
+}
+.Top .Mais {
+  position: absolute;
+  font-size: 2em !important;
+  bottom: 1em;
+  left: calc(50vw - 1em);
+}
+main,
+main .Habilidades {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 10em;
+}
+main .Habilidades #row1 div:first-child {
+  margin-left: 20vw;
+}
+main .Habilidades #row2 div:last-child {
+  margin-right: 20vw;
+}
+main .Habilidades .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .Habilidades #row2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+main .Habilidades .cardHabilidade {
+  margin: 2em 3em;
+  height: 10em;
+  width: 10em;
+  background-color: #f5f5f5 !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 800ms 200ms ease-in-out;
+}
+main .Habilidades .row .cardHabilidade i {
+  color: #44475a !important;
+  font-size: 6em;
+  animation: Balançar 0.45s infinite linear;
+}
+main .Habilidades .row .cardHabilidade:hover {
+  transform: scale(1.05) translateY(-2em);
+}
+main .Habilidades .row .cardHabilidade::before {
+  opacity: 0;
+  content: attr(data-Habilidade);
+  position: absolute;
+  bottom: -10em;
+  width: 102%;
+  top: -1%;
+  left: -1%;
+  transform: translateY(-10vh);
+  height: 102%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  color: #44475a;
+  background-color:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 50%;
+  z-index: 20;
+  transition: 600ms ease-in-out;
+  font-size: 1.2em;
+}
+main .Habilidades .row .cardHabilidade:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+main .Habilidades .title {
+  width: 100vw;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2em;
+  font-weight: 900;
+}
+main .Habilidades .cardHabilidade:hover ~ .cardHabilidade {
+  filter: brightness(50%) blur(3px);
+}
+/* #region Classes Universais*/
+
+.Write {
+  animation: Write 4s 1s linear;
+}
+
+.Flutuar {
+  animation: Flutuar 0.45s infinite linear;
+}
+
+.SugirCima {
+  animation: surgirCima 2s ease-in-out;
+}
+
+.Balançar {
+  animation: Balançar 0.45s infinite linear;
+}
+
+.SugirDireita {
+  animation: surgirDireita 2s ease-in-out;
+}
+
+.SugirEsquerda {
+  animation: surgirEsquerda 2s ease-in-out;
+}
+
+/* #endregion */
+
+/* #region Animações*/
+
+@keyframes Write {
+  from {
+    transform: translatex(-0.5em);
+    opacity: 80%;
+    width: 0;
+  }
+  to {
+    width: 44vw;
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Flutuar {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  25% {
+    transform: translatey(0.3em);
+  }
+  50% {
+    transform: translatey(0);
+  }
+  75% {
+    transform: translatey(-0.3em);
+  }
+}
+
+@keyframes balançar {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes surgirCima {
+  from {
+    transform: translateY(-4em);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes surgirDireita {
+  from {
+    transform: translateX(4em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes surgirEsquerda {
+  from {
+    transform: translateX(-4em);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* #endregion */
