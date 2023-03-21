@@ -12,10 +12,10 @@
 
     <!-- #region cover-->
     <div class="cover">
-      <div class="topBar SugirCima">
+      <div class="topBar">
         <header>
           <nav>
-            <ul>
+            <ul data-animation="aparecer">
               <li>
                 <a href="#Habilidades"
                   ><span><i class="fa-sharp fa-solid fa-house"></i></span
@@ -61,7 +61,7 @@
           <a href="#Habilidades"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
       </div>
-      <div class="paragrafo">
+      <div class="paragrafo" data-animation="aparecer">
         <p>
           Como desenvolvedor front-end, meu objetivo é criar interfaces bonitas,
           funcionais e acessíveis para usuários em diversas plataformas e
@@ -70,7 +70,7 @@
           proporcionam uma ótima experiência de uso.
         </p>
       </div>
-      <div class="img SugirEsquerda">
+      <div class="img" data-animation="aparecer">
         <img
           src="assets/Logo.png"
           alt="Logo com o o texto 'BT' dentro"
@@ -84,40 +84,39 @@
     <!-- #region Main -->
     <main>
       <div class="Habilidades" id="Habilidades">
-        <div class="title">
+        <div class="title" data-animation="aparecer">
           <h1>Habilidades</h1>
         </div>
-        <div class="row" id="row1">
-          <div data-Habilidade="html" class="cardHabilidade SugirEsquerda">
+        <div class="row" id="row1" data-animation="aparecer">
+          <div data-Habilidade="html" class="cardHabilidade">
             <i class="fa-brands fa-html5"></i>
           </div>
-          <div data-Habilidade="css" class="cardHabilidade SugirEsquerda">
+          <div data-Habilidade="css" class="cardHabilidade">
             <i class="fa-brands fa-css3-alt"></i>
           </div>
-          <div data-Habilidade="js" class="cardHabilidade SugirEsquerda">
+          <div data-Habilidade="js" class="cardHabilidade">
             <i class="fa-brands fa-square-js"></i>
           </div>
-          <div data-Habilidade="figma" class="cardHabilidade SugirEsquerda">
+          <div data-Habilidade="figma" class="cardHabilidade">
             <i class="fa-brands fa-figma"></i>
           </div>
         </div>
-        <div class="row surgirEsquerda" id="row2">
-          <div data-Habilidade="git" class="cardHabilidade SugirDireita">
+        <div class="row" id="row2" data-animation="aparecer">
+          <div data-Habilidade="git" class="cardHabilidade">
             <i class="fa-brands fa-square-git"></i>
           </div>
-          <div data-Habilidade="BootStrap" class="cardHabilidade SugirDireita">
+          <div data-Habilidade="BootStrap" class="cardHabilidade">
             <i class="fa-brands fa-bootstrap"></i>
           </div>
-          <div
-            data-Habilidade="Em Breve"
-            class="cardHabilidade SugirDireita"
-          ></div>
-          <div
-            data-Habilidade="Em Breve"
-            class="cardHabilidade SugirDireita"
-          ></div>
+          <div data-Habilidade="Em Breve" class="cardHabilidade"></div>
+          <div data-Habilidade="Em Breve" class="cardHabilidade"></div>
         </div>
       </div>
+      <div class="Habilidades">
+          <div class="title" data-animation="aparecer"><h1>SoftSkills</h1></div>
+          <div class="row" id="row1" data-animation="aparecer">
+          <div class="row" id="row2" data-animation="aparecer">
+        </div>
     </main>
     <!-- #endregion -->
 
@@ -131,6 +130,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="js/main.js"></script>
     <!-- #endregion -->
   </body>
 </html>
